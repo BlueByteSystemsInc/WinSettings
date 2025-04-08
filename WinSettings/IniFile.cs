@@ -83,7 +83,7 @@ namespace SoftCircuits.WinSettings
                         int pos = line.IndexOf(']', 1);
                         if (pos == -1)
                             pos = line.Length;
-#if NETSTANDARD
+#if NETSTANDARD  || NET472 || NET48
                         string name = line.Substring(1, pos - 1).Trim();
 #else
                         string name = line[1..pos].Trim();
@@ -110,7 +110,7 @@ namespace SoftCircuits.WinSettings
                         }
                         else
                         {
-#if NETSTANDARD
+#if NETSTANDARD || NET472 || NET48
                             name = line.Substring(0, pos).Trim();
                             value = line.Substring(pos + 1);
 #else

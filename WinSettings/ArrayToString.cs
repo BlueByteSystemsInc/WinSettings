@@ -82,7 +82,7 @@ namespace SoftCircuits.WinSettings
                     pos = s.IndexOf(',', pos);
                     if (pos == -1)
                         pos = s.Length;
-#if NETSTANDARD
+#if NETSTANDARD  || NET472 || NET48
                     list.Add(s.Substring(start, pos - start));
 #else
                     list.Add(s[start..pos]);
