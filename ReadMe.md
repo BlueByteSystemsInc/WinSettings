@@ -1,6 +1,12 @@
+# Acknowledgement 
+
+All credits goes to the original author of this repo. See above. 
+
+We simply retarget some old .NET frameworks and signed the dll. 
+
 # WinSettings
 
-[![NuGet version (SoftCircuits.WinSettings)](https://img.shields.io/nuget/v/SoftCircuits.WinSettings.svg?style=flat-square)](https://www.nuget.org/packages/SoftCircuits.WinSettings/)
+[![NuGet version (SoftCircuits.WinSettings)](https://img.shields.io/nuget/v/BlueByte.WinSettings.svg?style=flat-square)](https://www.nuget.org/packages/BlueByte.WinSettings/)
 
 ```
 Install-Package SoftCircuits.WinSettings
